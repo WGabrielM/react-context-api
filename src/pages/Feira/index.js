@@ -1,10 +1,12 @@
-import React from "react";
+import React, {useContext} from "react";
 import NavBar from "./NavBar";
 import feira from "./feira.json";
 import Produto from "components/Produto";
 import { Container, Header, Lista } from "./styles";
+import { UsuarioContext } from "common/context/Usuario";
 
 export default function Feira() {
+  const {} = useContext(UsuarioContext)
   return (
     <Container>
       <NavBar />
